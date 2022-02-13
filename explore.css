@@ -1,0 +1,141 @@
+
+
+/* header*/
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  
+}
+body{
+  background-color: #f0f8ff;
+}
+
+.hero {
+  width: 100%;
+  min-height: 100vh;
+  background: #eefafc;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  color: #0047AB;
+  background: url(wave.png);
+  background-position: bottom;
+  background-size: 100% 30%;
+  background-repeat: no-repeat;
+  z-index: 1;
+  overflow: hidden;
+ 
+}
+nav {
+  display: flex;
+  align-items: center;
+  padding: 8px 0;
+}
+.ncb {
+  font-size: 3em;
+  color: #0047AB;
+  font-weight: 800;
+  font-size: 50px;
+}
+.logo {
+  width: 150px;
+}
+nav ul {
+  flex: 1;
+  text-align: right;
+}
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 0 15px;
+  
+}
+a {
+  text-decoration: none;
+  color:#0047AB;
+}
+a:hover{
+  background-color: #0047AB;
+  color: #eefafc;
+}
+.btn {
+  border: 2px solid #0047AB;
+  padding: 6px 25px;
+  border-radius: 30px;
+  margin-left: 30px;
+}
+nav .btn:hover {
+  background: #0047AB;
+  color: #eefafc;
+  font-weight: 500;
+  transition: 0.1s;
+}
+
+
+
+
+
+/*card*/
+
+
+.flip-card {
+  background-color: transparent;
+  margin: 30px 40px;
+  border: 1px solid #0047AB;
+  perspective: 1000px; 
+  display: inline-block;
+  height: 400px;
+  width: 300px ;
+  padding-left:500 px; 
+  margin-top: 30px;
+
+}
+
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  font-weight: 400;
+  
+}
+.flip-card-back .flipcard-btn{
+  color: #0047AB;
+  background-color: #eefafc;
+  border: 1px solid #fff;
+  padding: 2px 7px;
+  border-radius: 30px;
+  font-weight: 400;
+ }
+
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; 
+  backface-visibility: hidden;
+}
+
+
+.flip-card-front {
+  background-color: #fff ;
+ 
+}
+ 
+
+.flip-card-back {
+  background-color: #0047AB;
+  color: white;
+  transform: rotateY(180deg);
+ 
+}
